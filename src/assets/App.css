@@ -1,0 +1,47 @@
+.full-screen-height {
+  min-height: 100vh;
+  
+}
+
+.fullwid {
+  min-width: 80vb;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
+.border-outline {
+  border: 2px solid black;
+}
+img {
+  transition:  filter 0.3s ease-in-out;
+}
+img:hover{
+  filter: grayscale(100%);
+}
+
+.eductionx{
+  padding: 2px;
+}
+.box-lab:hover{
+background: rgb(36, 70, 141);
+/* opacity: 7s0%; */
+color : white;
+transition:  filter 0.3s ease-in-out;
+cursor: pointer;
+
+}
+
+.logo-class{
+  align-items: center;
+
+}         
+
+.social-card:hover{
+  /* z-index: -2; */
+
+transition:  filter 0.3s ease-in-out;
+
+  cursor: pointer;
+
+}
