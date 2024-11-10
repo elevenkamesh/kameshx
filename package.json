@@ -1,5 +1,6 @@
 {
-  "name": "yt",
+  "homepage" : "http://elevenkamesh.github.io/kameshx",
+  "name": "kamesh-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
