@@ -17,8 +17,7 @@ const Education = () =>{
   website : "Scaler"
 }] 
     return (
-        <div className="eductionx container text-center" id="cert">
-            <div className="row flex flex-row grid">
+        <div className="eductionx container grid" id="cert">
 <div>
             <div>
          
@@ -48,11 +47,11 @@ const Education = () =>{
 
 
 <div>
-    <div className="p-0">
+    <div>
     <h3 class="display-5 fw-bold text-center text-body-emphasis lh-1 mb-3">Certfications</h3>
-    </ div>
+    </div>
 
-    <div class=" col-lg-12 d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+  <div class=" col-lg-12 d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
   <div class="list-group list-group-checkable d-grid gap-2 border-0">
 
     {certification.map(e=>
@@ -69,10 +68,12 @@ const Education = () =>{
 
 
   </div>
-</div>
 
 
 </div>
+
+
+
 </div>
 
         </div>

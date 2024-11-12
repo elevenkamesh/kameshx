@@ -1,5 +1,7 @@
 // import images from "../utils/images";
-import profile from '../assets/profile.jpg';
+// import profile from '../assets/profile.jpg';
+import profile from '../assets/x.webp.webp';
+
 // import profile from '../assets/me.jpg';
 
 import { FaFileDownload  } from "react-icons/fa";
@@ -9,8 +11,8 @@ function HeroSection (){
         <>
         <div id='home' className="container full-height-screen">
             <div class="  row flex-lg-row-reverse justify-content-center align-items-center g-5 py-3">
-            <div className="col-10 col-sm-8 col-lg-6">
-                <img src={profile} className=" border-outline rounded-circle d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="500" loading="lazy" />
+            <div className="col-6 col-sm-8 col-lg-6">
+                <img src={profile} className=" border-outline  d-block mx-lg-auto img-fluid rounded-5" alt="Bootstrap Themes" width="300" height="100" loading="lazy" />
           
             </div>
             <div class="col-lg-6 text-center">

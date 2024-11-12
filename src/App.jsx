@@ -13,7 +13,7 @@ import Experience from './componnets/exp';
 function App() {
 
   return (
-    <div className='fullwid' data-bs-theme="ligth">
+    <div className='fullwid'>
 < NavBar />
 <HeroSection />
 
