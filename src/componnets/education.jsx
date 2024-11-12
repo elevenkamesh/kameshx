@@ -17,11 +17,11 @@ const Education = () =>{
   website : "Scaler"
 }] 
     return (
-        <div className="eductionx container grid" id="cert">
+        <div className="eductionx" id="cert">
+
 <div>
             <div>
-         
-         <h3 class="display-5 fw-bold  text-body-emphasis lh-1 mb-3 pt-0">Education</h3>
+         <h3 class="display-5 fw-bold text-center text-body-emphasis lh-1 mb-3 pt-0">Education</h3>
          </div>
 
     <div class=" col-lg-12 d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
@@ -76,7 +76,7 @@ const Education = () =>{
 
 </div>
 
-        </div>
+    </div>
     )
     }
 
