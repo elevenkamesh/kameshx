@@ -2,7 +2,7 @@ import  keyboad from '../assets/keyboard.gif';
 const About = ()=>{
     return (
         <div id="about">
-<div class="full-screen-height px-4 pt-5 my-5 text-center border-bottom">
+<div class="full-screen-height px-4  my-5 text-center border-bottom">
 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
 
     <div class="col-lg-6 mx-auto">

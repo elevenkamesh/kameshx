@@ -2,11 +2,14 @@
   min-height: 100vh;
   
 }
-
+.body{
+  background-color: aliceblue;
+}
 .fullwid {
   min-width: 80vw;
   padding-left: 20%;
   padding-right: 20%;
+  background-color: white;
 
 }
 
@@ -21,7 +24,7 @@ img:hover{
 }
 
 .eductionx{
-  padding: 2px;
+  padding-bottom: 2px;
   display: flex;
   justify-content: center
 
@@ -39,7 +42,9 @@ cursor: pointer;
   align-items: center;
 
 }         
-
+.love{
+  color: red;
+}
 .social-card:hover{
   /* z-index: -2; */
 
@@ -47,4 +52,11 @@ transition:  filter 0.3s ease-in-out;
 
   cursor: pointer;
 
+}
+
+.profilex{
+  background-color: white;
+  height: 50vh;
+  border-bottom: 50px;
+  align-items: start
 }

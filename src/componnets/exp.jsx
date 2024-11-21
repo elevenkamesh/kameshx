@@ -37,7 +37,7 @@ const Experience =()=>{
     }
 ]
     return (
-        <div class="container px-4 py-5">
+        <div class="container px-4 py-2">
                 <h1 class="display-10 text-center fw-bold  mb-3 border-bottom  pb-2">Experience</h1>
         <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
             

@@ -73,7 +73,7 @@ const Skills = () =>{
     ]
 
     return (
-<div class="container px-4 py-5" id="skill">
+<div class="container pb-4" id="skill">
     <h1 class="pb-2 border-bottom display-10 text-center">Skills</h1>
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
@@ -85,7 +85,7 @@ const Skills = () =>{
    
     <div>
       <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">{e.title}</h3>
-      <p>{e.description}</p>
+      {/* <p>{e.description}</p> */}
     </div>
   </div>
   
