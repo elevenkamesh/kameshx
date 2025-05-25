@@ -1,0 +1,70 @@
+{
+    "heading" : {
+"skills" : "Skills",
+"experience": "Experience"
+    },
+    "nav": {
+      "home": "Home",
+      "certifications": "Certifications",
+      "skills": "Skills",
+      "about": "About"
+    } , 
+    "hero": {
+        "greeting": "Hi, Kamesh Here!",
+        "description": "23-year-old software developer from India, am a full-stack dev, drink instant coffee, and get coding advice from my dog, Zara.",
+        "resume": "Resume"
+      },
+    "about": {
+        "title": "About Me",
+        "description": "I've always had a deep fascination with technology. My journey began in childhood when I repaired my grandmother's phone and continued through my school years, fixing my own PC and helping friends with theirs for free. This early exposure to troubleshooting and repairing computers led me to start a small business, charging for my repair services, which further fueled my passion for systems and gaming. My interest in tech expanded when I began building gaming PCs for others, merging my love for gaming and hardware. This passion drove me to think bigger, focusing on scalable and high-availability systems and servers."
+      },
+      "education": {
+        "title": "Education",
+        "masters": "Master of Computer Science",
+        "mastersCollege": "Thiagarajar College",
+        "bachelors": "Bachelor of Computer Application",
+        "bachelorsCollege": "The American College",
+        "certTitle": "Certifications",
+        "certifications": {
+          "rhcsa": "Red Hat Certified System Administrator (RHCSA)",
+          "ts": "TypeScript for Beginner to Advanced",
+          "python": "Python Course Certification: Mastering the Essentials"
+        }
+      },
+      "experience": {
+        "maticz" : {
+            "Software_Developer": "Software Developer",
+            "description": "full-stack dev worked on mern stack and golang projects" ,
+            "end" :"present",
+            "start" : "sep-2023" ,
+            "points" :  [ "Worked in NodeJS (Express) & goLang to build the API" ,"Developed UI components using ReactJS and Redux" ,"Used Mongoose ODM to manage non-relational database and maintain its data." , "Collaborated with designers to meet customer expectations." , "worked of nfc based wallet using react native"]
+        },
+        "railway" : {
+            "title": "Software intern",
+            "company": "indian Railways",
+        
+            "start" : "jan-2023" ,
+            "end" :"mar-2023",
+            "description": "worked on the websites for railway hospital",
+            "points": []
+        },
+        "freelance" : {
+            "title": "Computer Services and Video Editor",
+            "company": 
+            "freelancer",
+        "image" : "",
+    
+            "start" : "jan-2018" ,
+            "end" :"present",
+            "description": "deep passion for technology and creativity, I offer a unique blend of computer services and video editing expertise. I enjoy solving technical challenges, whether it's troubleshooting computer issues, optimizing systems, or providing digital solutions that streamline workflows"
+        ,
+        "points": []
+        }
+    },
+    "footer": {
+        "privacy": "No copyright issues. | privacy?",
+        "copy": "Feel free to copy. If you need any help, ping me!",
+        "made_with": "Made with <0>♥</0> in India"
+      }
+  }
+  

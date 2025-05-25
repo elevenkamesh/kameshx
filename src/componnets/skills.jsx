@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import GetImage from '../utils/images.jsx';
 
 const images = GetImage();
 
 const Skills = () =>{
+    const { t } = useTranslation();
 
     const sxx = [
         {
@@ -74,7 +76,7 @@ const Skills = () =>{
 
     return (
 <div class="container pb-4" id="skill">
-    <h1 class="pb-2 border-bottom display-10 text-center">Skills</h1>
+    <h1 class="pb-2 border-bottom display-10 text-center">{t("heading.skills")}</h1>
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
 
