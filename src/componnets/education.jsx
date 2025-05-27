@@ -22,44 +22,49 @@ const Education = () => {
     }
   ];
 
+
   return (
-    <div className="eductionx" id="cert">
-      <div>
-        <div>
-          <h3 className="display-5 fw-bold text-center text-body-emphasis lh-1 mb-3 pt-0">
-            {t('education.title')}
-          </h3>
-        </div>
-
-        <div className="col-lg-12 d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-          <div className="list-group list-group-checkable d-grid gap-2 border-0">
-            <label className="box-lab spb-3 list-group-item rounded-3 py-3">
+    <div className="education-section"  id="cert">
+      {/* Education Section */}
+      <div className="mb-5 mb-lg-6 edu-first">
+        <h3 className="display-6 fw-bold text-center text-body-emphasis lh-1 mb-4">
+          {t('education.title')}
+        </h3>
+  
+        <div className="d-flex flex-column flex-md-row flex-wrap gap-3 align-items-center justify-content-center">
+          <div className="list-group w-100 w-md-auto list-group-checkable d-grid gap-3 border-0">
+            <label className="box-lab list-group-item rounded-3 py-3 text-center text-md-start">
               {t('education.masters')}
-              <span className="d-block small opacity-50 mx-5 px-2">{t('education.mastersCollege')}</span>
+              <span className="d-block small opacity-50 px-2">{t('education.mastersCollege')}</span>
             </label>
-
-            <label className="box-lab list-group-item rounded-3 py-3">
+  
+            <label className="box-lab list-group-item rounded-3 py-3 text-center text-md-start">
               {t('education.bachelors')}
-              <span className="d-block small opacity-50 mx-5 px-2">{t('education.bachelorsCollege')}</span>
+              <span className="d-block small opacity-50 px-2">{t('education.bachelorsCollege')}</span>
             </label>
           </div>
         </div>
       </div>
-
-      <div>
-        <div>
-          <h3 className="display-5 fw-bold text-center text-body-emphasis lh-1 mb-3">
-            {t('education.certTitle')}
-          </h3>
-        </div>
-
-        <div className="col-lg-12 d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-          <div className="list-group list-group-checkable d-grid gap-2 border-0">
+  
+      {/* Certification Section */}
+      <div className="mb-5 mb-lg-6 edu-first" >
+        <h3 className="display-6 fw-bold text-center text-body-emphasis lh-1 mb-4">
+          {t('education.certTitle')}
+        </h3>
+  
+        <div className="d-flex flex-column flex-md-row flex-wrap gap-3 align-items-center justify-content-center">
+          <div className="list-group w-100 w-md-auto list-group-checkable d-grid gap-3 border-0">
             {certification.map((e, i) => (
-              <a href={e.url} target="_blank" rel="noopener noreferrer" key={i}>
-                <label className="box-lab list-group-item rounded-3 py-3">
+              <a
+                href={e.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={i}
+                className="text-decoration-none"
+              >
+                <label className="box-lab list-group-item rounded-3 py-3 text-center text-md-start">
                   {e.certName}
-                  <span className="d-block small opacity-50 mx-5 px-2">{e.website}</span>
+                  <span className="d-block small opacity-50 px-2">{e.website}</span>
                 </label>
               </a>
             ))}
@@ -68,6 +73,7 @@ const Education = () => {
       </div>
     </div>
   );
+  
 };
 
 export default Education;

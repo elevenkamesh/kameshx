@@ -16,7 +16,6 @@ function App() {
     <div className='fullwid'>
 < NavBar />
 <HeroSection />
-
 < Skills />
 <Experience />
 < Education />

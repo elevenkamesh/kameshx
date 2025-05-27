@@ -1,50 +1,36 @@
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaFileDownload , FaGithub, FaDev , FaMedium } from "react-icons/fa";
+import { FaFileDownload, FaGithub, FaDev, FaMedium } from "react-icons/fa";
 import { TbBrandLeetcode } from "react-icons/tb";
 import links from '../utils/links';
-const Social = ()=>{
-    return (
 
-  <div class="d-flex gap-2 justify-content-center py-5">
-<div className="social-card">
-<a href={links.linkedin} className="badge d-flex align-items-center  text-secondary-emphasis  border border-secondary-subtle rounded-pills" >
-        <span className="logo-class px-2"><IoLogoLinkedin /> </span>
-         <p  className="pt-3">linkedin</p>
-          </a>
+const Social = () => {
+  return (
+    <div className="container py-5">
+      <div className="row justify-content-center gx-3 gy-4">
+        {/* Each social link card */}
+        {[ 
+          { icon: <IoLogoLinkedin />, label: "LinkedIn", link: links.linkedin },
+          { icon: <FaGithub />, label: "GitHub", link: links.github },
+          { icon: <FaDev />, label: "Dev.to", link: links.dev },
+          { icon: <FaMedium />, label: "Medium", link: links.medium },
+          { icon: <TbBrandLeetcode />, label: "Leetcode", link: links.leetcode }
+        ].map((item, i) => (
+          <div className="col-6 col-sm-4 col-md-3 col-lg-2 text-center" key={i}>
+            <a
+              href={item.link}
+              className="d-flex flex-column align-items-center justify-content-center text-decoration-none border border-secondary-subtle  py-2 h-100"
+              style={{ minHeight: "100px" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="fs-4 text-secondary-emphasis mb-1">{item.icon}</div>
+              <div className="text-secondary-emphasis small fw-medium">{item.label}</div>
+            </a>
           </div>
-<div className="social-card">
+        ))}
+      </div>
+    </div>
+  );
+};
 
-          <a href={links.github} className="badge d-flex align-items-center  text-secondary-emphasis  border border-secondary-subtle rounded-pills" >
-        <span className="logo-class px-2"><FaGithub /> </span>
-         <p  className="pt-3">GitHub</p>
-          </a>
-</div>
-<div className="social-card">
-
-          <a href={links.dev} className="badge d-flex align-items-center  text-secondary-emphasis  border border-secondary-subtle rounded-pills" >
-        <span className="logo-class px-2"><FaDev /> </span>
-         <p  className="pt-3">dev.to</p>
-          </a>
-</div>
-<div className="social-card">
-
-          <a href={links.medium} className="badge d-flex align-items-center  text-secondary-emphasis  border border-secondary-subtle rounded-pills" >
-        <span className="logo-class px-2"><FaMedium /> </span>
-         <p  className="pt-3">Medium</p>
-          </a>
-</div>
-
-<div className="social-card">
-
-          <a href={links.leetcode} className="badge d-flex align-items-center  text-secondary-emphasis  border border-secondary-subtle rounded-pills" >
-        <span className="logo-class px-2"><TbBrandLeetcode /> </span>
-         <p  className="pt-3">Leetcode</p>
-          </a>
-</div>
-  
-    
-</div> 
-    )
-}
-
-export default Social
+export default Social;

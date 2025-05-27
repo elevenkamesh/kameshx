@@ -5,13 +5,7 @@
 .body{
   background-color: aliceblue;
 }
-.fullwid {
-  min-width: 80vw;
-  padding-left: 20%;
-  padding-right: 20%;
-  background-color: white;
 
-}
 
 .border-outline {
   border: 2px solid black;
@@ -23,10 +17,17 @@ img:hover{
   filter: grayscale(100%);
 }
 
-.eductionx{
-  padding-bottom: 2px;
+.education-section{
+  margin-bottom: 5rem; /* or any value you like */
   display: flex;
-  justify-content: center
+  justify-content: center;
+  width: 100%;
+
+
+}
+.edu-first{
+  margin-right: 2.5%;
+  margin-left: 5%;
 
 }
 .box-lab:hover{
@@ -63,4 +64,283 @@ transition:  filter 0.3s ease-in-out;
 
 .love {
   color: red;
+}
+
+.fullwid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Let children be full width */
+}
+
+/* Ensure full viewport height works properly */
+/* .full-height-screen {
+  padding: 5%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.full-height-screen {
+  padding: 5%;
+  padding-top: calc(5% + 60px); /* or however tall your navbar is */
+  height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Better image handling */
+.profilex {
+  object-fit: contain; /* Prevents image distortion */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Optional: adds depth */
+  
+}
+
+/* Better button for mobile */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem !important;
+  }
+}
+/* hero section */
+/* Base container styling */
+
+
+/* Image styling */
+.image-container {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.profile-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Text styling */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--bs-body-emphasis);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+.hero-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+/* Base container styling */
+.full-height-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Image styling */
+.image-container {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Text styling */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--bs-body-emphasis);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+.hero-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .full-height-screen {
+    height: auto; /* Let it grow naturally */
+    padding-top: 80px; /* navbar offset */
+  }
+  
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .hero-btn {
+    padding: 0.5rem 1.25rem !important;
+    font-size: 0.9rem;
+  }
+  
+  .image-container {
+    margin-bottom: 2rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .profile-img {
+    max-height: 300px;
+  }
+}
+
+
+/* skill section */
+
+/* Skills Section */
+#skills {
+  background-color: var(--bs-body-bg);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--bs-body-emphasis);
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--bs-primary);
+  border-radius: 2px;
+}
+
+.skill-card {
+  background: var(--bs-body-bg);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--bs-border-color);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-color: var(--bs-primary);
+}
+
+.skill-icon {
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+  filter: grayscale(0%);
+}
+
+.skill-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .section-title {
+      font-size: 2rem;
+  }
+  
+  .row-cols-lg-5 {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+      font-size: 1.75rem;
+  }
+  
+  .row-cols-md-4 {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .skill-icon {
+      width: 50px;
+      height: 50px;
+  }
+  
+  .skill-title {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+      font-size: 1.5rem;
+  }
+  
+  .row-cols-sm-3 {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skill-card {
+      padding: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .row-cols-2 {
+      grid-template-columns: 1fr;
+  }
 }

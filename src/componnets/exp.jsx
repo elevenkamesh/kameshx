@@ -37,44 +37,100 @@ const Experience =()=>{
         
     }
 ]
-    return (
-        <div class="container px-4 py-2">
-                <h1 class="display-10 text-center fw-bold  mb-3 border-bottom  pb-2">{t("heading.experience")}</h1>
-        <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+//     return (
+//         <div class="container px-4 py-2">
+//                 <h1 class="display-10 text-center fw-bold  mb-3 border-bottom  pb-2">{t("heading.experience")}</h1>
+//         <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
             
-  <div class="list-group">
-  {data.map((e)=> 
-    <a class="list-group-item list-group-item-action d-flex gap-3 py-3">
-      <img src={e.image ? e.image :  "https://thebig.co/wp-content/uploads/2017/02/no-logo-featured.jpg"} alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0" />
-      <div class="d-flex gap-2 w-100 justify-content-between">
-        <div>
-          <h6 class="mb-0">{e.title}</h6>
-          <h6 class="mb-0">{e.company}</h6>
+//   <div class="list-group">
+//   {data.map((e)=> 
+//     <a class="list-group-item list-group-item-action d-flex gap-3 py-3">
+//       <img src={e.image ? e.image :  "https://thebig.co/wp-content/uploads/2017/02/no-logo-featured.jpg"} alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0" />
+//       <div class="d-flex gap-2 w-100 justify-content-between">
+//         <div>
+//           <h6 class="mb-0">{e.title}</h6>
+//           <h6 class="mb-0">{e.company}</h6>
 
-          <p class="mb-0 opacity-75">{e.description}</p>
+//           <p class="mb-0 opacity-75">{e.description}</p>
 
-          {e.points.length > 0 && <ul>
-           { e.points.map(e=> 
-            <li>{e}</li>
-            )
-            }
-          </ul>}
-        </div>
-        <div className="justify-content-center">
-        <small class="opacity-50 text-nowrap px-4">{e.start}</small>
+//           {e.points.length > 0 && <ul>
+//            { e.points.map(e=> 
+//             <li>{e}</li>
+//             )
+//             }
+//           </ul>}
+//         </div>
+//         <div className="justify-content-center">
+//         <small class="opacity-50 text-nowrap px-4">{e.start}</small>
        
-        <small class="opacity-50 text-nowrap">{e.end}</small>
-        </div>
-      </div>
-    </a>
-  )
-  }
+//         <small class="opacity-50 text-nowrap">{e.end}</small>
+//         </div>
+//       </div>
+//     </a>
+//   )
+//   }
   
 
+//   </div>
+// </div>
+// </div>
+//     )
+return (
+  <div className="container px-3 px-md-4">
+    <h1 className="display-6 text-center fw-bold mb-4 border-bottom pb-2">
+      {t("heading.experience")}
+    </h1>
+
+    <div className="d-flex flex-column flex-md-row flex-wrap p-3 gap-4 py-md-4 align-items-center justify-content-center">
+      <div className="list-group w-100">
+        {data.map((e, index) => (
+          <a
+            key={index}
+            className="list-group-item list-group-item-action d-flex flex-column flex-md-row gap-3 py-3"
+          >
+            <img
+              src={
+                e.image
+                  ? e.image
+                  : "https://thebig.co/wp-content/uploads/2017/02/no-logo-featured.jpg"
+              }
+              alt="company logo"
+              width="48"
+              height="48"
+              className="rounded-circle flex-shrink-0 mx-auto mx-md-0"
+            />
+
+            <div className="d-flex flex-column flex-md-row gap-2 w-100 justify-content-between">
+              <div>
+                <h6 className="mb-1">{e.title}</h6>
+                <h6 className="mb-1 text-muted">{e.company}</h6>
+                <p className="mb-1 opacity-75">{e.description}</p>
+
+                {e.points.length > 0 && (
+                  <ul className="mb-1">
+                    {e.points.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+
+              <div className="text-md-end mt-2 mt-md-0">
+                <small className="opacity-50 text-nowrap d-block">
+                  {e.start}
+                </small>
+                <small className="opacity-50 text-nowrap d-block">
+                  {e.end}
+                </small>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
   </div>
-</div>
-</div>
-    )
+);
+
 }
 
 
