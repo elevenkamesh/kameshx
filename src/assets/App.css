@@ -106,6 +106,9 @@ transition:  filter 0.3s ease-in-out;
     font-size: 0.9rem;
     padding: 0.5rem 1rem !important;
   }
+  .education-section{
+    display: unset;
+  }
 }
 /* hero section */
 /* Base container styling */
