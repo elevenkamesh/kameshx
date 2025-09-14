@@ -7,7 +7,8 @@
       "home": "Home",
       "certifications": "Certifications",
       "skills": "Skills",
-      "about": "About"
+      "about": "About",
+      "project" : "Projects"
     } , 
     "hero": {
         "greeting": "Hi, Kamesh Here!",
@@ -37,7 +38,14 @@
             "description": "full-stack dev worked on mern stack and golang projects" ,
             "end" :"present",
             "start" : "sep-2023" ,
-            "points" :  [ "Worked in NodeJS (Express) & goLang to build the API" ,"Developed UI components using ReactJS and Redux" ,"Used Mongoose ODM to manage non-relational database and maintain its data." , "Collaborated with designers to meet customer expectations." , "worked of nfc based wallet using react native"]
+            "points" :  [ "Built and maintained RESTful APIs using Node.js (Express) and Python (FastAPI), ensuring high performance and scalability" ,
+            " Designed and developed reusable, responsive UI components using ReactJS and Redux, improving code maintainability and reducing UI defects." ,
+          "Enhanced API response times by implementing a Redis-based caching mechanism, reducing average latency significantly." ,
+        "Integrated BullMQ and Kafka to enable asynchronous processing and distributed message handling, reducing CPU load by 60%." ,
+        "Implemented secure and scalable file storage using AWS S3, and optimized content delivery with CloudFront CDN to reduce file access latency globally.",
+        "Built and integrated NFC keycard support in a React Native application using native modules, enabling secure contactless authentication and improving user experience.",
+        "Collaborated closely with UI/UX designers and clients to translate business requirements into high-quality, user-friendly features."
+  ]
         },
         "railway" : {
             "title": "Software intern",

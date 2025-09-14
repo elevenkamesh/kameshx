@@ -1,12 +1,24 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import '../i18n'; // Make sure your i18n setup file is imported
+import { Link, useNavigate } from 'react-router-dom';
+import '../i18n';
 
 const NavBar = () => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+  };
+
+  // Scroll to section after navigating to home
+  const handleSectionClick = (section) => {
+    navigate('/', { state: { scrollTo: section} });
+    // navigate('/');
+    // setTimeout(() => {
+    //   const el = document.getElementById(section);
+    //   if (el) el.scrollIntoView({ behavior: 'smooth' });
+    // }, 100); // Wait for navigation/render
   };
 
   return (
@@ -31,45 +43,62 @@ const NavBar = () => {
           >
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
+                <Link className="nav-link" to="/">
                   {t('nav.home')}
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#cert">
+                <button
+                  className="nav-link btn btn-link"
+                  type="button"
+                  onClick={() => handleSectionClick('cert')}
+                >
                   {t('nav.certifications')}
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#skill">
+                <button
+                  className="nav-link btn btn-link"
+                  type="button"
+                  onClick={() => handleSectionClick('skills')}
+                >
                   {t('nav.skills')}
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <Link className="nav-link" to="/project">
+                  {t('nav.project')}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <button
+                  className="nav-link btn btn-link"
+                  type="button"
+                  onClick={() => handleSectionClick('about')}
+                >
                   {t('nav.about')}
-                </a>
+                </button>
               </li>
             </ul>
 
             <div className="ms-auto d-flex">
-      <button
-        className={`btn btn-sm me-2 ${
-          i18n.language === 'en' ? 'btn-primary' : 'btn-outline-secondary'
-        }`}
-        onClick={() => changeLanguage('en')}
-      >
-        EN
-      </button>
-      <button
-        className={`btn btn-sm ${
-          i18n.language === 'ja' ? 'btn-primary' : 'btn-outline-secondary'
-        }`}
-        onClick={() => changeLanguage('ja')}
-      >
-        日本語
-      </button>
-    </div>
+              <button
+                className={`btn btn-sm me-2 ${
+                  i18n.language === 'en' ? 'btn-primary' : 'btn-outline-secondary'
+                }`}
+                onClick={() => changeLanguage('en')}
+              >
+                EN
+              </button>
+              <button
+                className={`btn btn-sm ${
+                  i18n.language === 'ja' ? 'btn-primary' : 'btn-outline-secondary'
+                }`}
+                onClick={() => changeLanguage('ja')}
+              >
+                日本語
+              </button>
+            </div>
           </div>
         </div>
       </nav>

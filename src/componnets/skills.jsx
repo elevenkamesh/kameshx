@@ -18,6 +18,11 @@ const Skills = () => {
             description: 'wrapper of javaScript'
         },
         {
+            image: images.python,
+            title: 'Python',
+            description: 'programing language'
+        },
+        {
             image: images.golang,
             title: 'Golang',
             description: 'programing language'
@@ -31,6 +36,12 @@ const Skills = () => {
             image: images.node,
             title: 'Node Js',
             description: 'JS runtime'
+        },
+        
+        {
+            image: images.FastAPI,                                                                                            
+            title: 'FastAPI',
+            description: 'backend framework'
         },
         {
             image: images.mongo,
@@ -57,11 +68,11 @@ const Skills = () => {
             title: 'Docker',
             description: 'containerization'
         },
-        {
-            image: images.kubernetes,
-            title: 'K8s',
-            description: 'orchestration'
-        },
+        // {
+        //     image: images.kubernetes,
+        //     title: 'K8s',
+        //     description: 'orchestration'
+        // },
         {
             image: images.bash,
             title: 'Bash',
@@ -70,7 +81,8 @@ const Skills = () => {
     ];
 
     return (
-        <div className="container" id="skills">
+          <section id="skills">
+        <div className="container py-5">
             <h1 className="section-title text-center mb-5">{t("heading.skills")}</h1>
 
             <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
@@ -96,6 +108,8 @@ const Skills = () => {
                 ))}
             </div>
         </div>
+
+        </section>
     );
 };
 

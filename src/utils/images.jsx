@@ -12,6 +12,8 @@ import mongo from '../assets/tech/mongodb.svg'
 import posgress from '../assets/tech/postgresql.svg'
 import python from '../assets/tech/python.svg'
 import bash from '../assets/tech/bash.svg'
+import FastAPI from '../assets/tech/FastAPI.svg'
+
 
 
 
@@ -32,7 +34,8 @@ return {
     posgress,
     mongo,
     python,
-    bash
+    bash,
+    FastAPI
 
 }
 }

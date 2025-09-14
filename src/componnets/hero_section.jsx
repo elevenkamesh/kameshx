@@ -29,14 +29,24 @@ function HeroSection() {
           <p className="hero-description mb-4">
             {t('hero.description')}
           </p>
+    {/* <div className="glowing-text mb-4">
+            <p className="mb-0">Actively looking for new opportunities and currently learning Generative AI.</p>
+          </div> */}
           <div className="d-flex justify-content-center justify-content-lg-start">
-            <button 
+                      <a
+              href="/palani_kameshwaran.pdf"
+              download="palani_kameshwaran.pdf"
+              className="hero-btn btn btn-primary px-4 py-2"
+              role="button"
+            >
+            {/* <button 
               type="button" 
               className="hero-btn btn btn-primary px-4 py-2"
-            >
+            > */}
               <FaFileDownload className="me-2" /> 
               {t('hero.resume')}
-            </button>
+            {/* </button> */}
+            </a>
           </div>
         </div>
       </div>

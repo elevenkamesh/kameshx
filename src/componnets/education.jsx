@@ -24,7 +24,8 @@ const Education = () => {
 
 
   return (
-    <div className="education-section"  id="cert">
+    <section  id="cert">
+      <div className="education-section py-5" >
       {/* Education Section */}
       <div className="mb-5 mb-lg-6 edu-first">
         <h3 className="display-6 fw-bold text-center text-body-emphasis lh-1 mb-4">
@@ -71,7 +72,8 @@ const Education = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
   
 };
