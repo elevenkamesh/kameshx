@@ -34,8 +34,8 @@ function HeroSection() {
           </div> */}
           <div className="d-flex justify-content-center justify-content-lg-start">
                       <a
-              href="/palani_kameshwaran.pdf"
-              download="palani_kameshwaran.pdf"
+              href="/kameshwaran.pdf"
+              download="kameshwaran.pdf"
               className="hero-btn btn btn-primary px-4 py-2"
               role="button"
             >

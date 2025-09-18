@@ -21,7 +21,10 @@ const handleSubmit = (e) => {
       .then((response) => response.json())
       .then((data) => {
         console.log("Success:", data);
+        
         localStorage.setItem("token", data.data.token);
+        alert("Login Successful");
+        window.location.href = "/"; // Redirect to admin page  
       })
       .catch((error) => {
         console.error("Error:", error);

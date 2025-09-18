@@ -65,11 +65,11 @@ const NavBar = () => {
                   {t('nav.skills')}
                 </button>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/project">
                   {t('nav.project')}
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <button
                   className="nav-link btn btn-link"
