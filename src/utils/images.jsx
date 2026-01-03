@@ -17,8 +17,6 @@ import spring from "../assets/tech/spring.svg";
 import java from "../assets/tech/java.svg";
 const GetImage = () => {
   return {
-    java,
-    spring,
     kubernetes,
     aws,
     git,
@@ -34,6 +32,8 @@ const GetImage = () => {
     python,
     bash,
     FastAPI,
+    java,
+    spring,
   };
 };
 
