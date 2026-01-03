@@ -1,78 +1,76 @@
 {
-    "heading" : {
-"skills" : "Skills",
-"experience": "Experience"
+  "heading": {
+    "skills": "Skills",
+    "experience": "Experience"
+  },
+  "nav": {
+    "home": "Home",
+    "certifications": "Certifications",
+    "skills": "Skills",
+    "about": "About",
+    "project": "Projects"
+  },
+  "hero": {
+    "greeting": "Hi, Kamesh Here!",
+    "description": "24-year-old software developer from India, am a full-stack dev, drink instant coffee, and get coding advice from my dog, Zara.",
+    "resume": "Resume"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I've always had a deep fascination with technology. My journey began in childhood when I repaired my grandmother's phone and continued through my school years, fixing my own PC and helping friends with theirs for free. This early exposure to troubleshooting and repairing computers led me to start a small business, charging for my repair services, which further fueled my passion for systems and gaming. My interest in tech expanded when I began building gaming PCs for others, merging my love for gaming and hardware. This passion drove me to think bigger, focusing on scalable and high-availability systems and servers."
+  },
+  "education": {
+    "title": "Education",
+    "masters": "Master of Computer Science",
+    "mastersCollege": "Thiagarajar College",
+    "bachelors": "Bachelor of Computer Application",
+    "bachelorsCollege": "The American College",
+    "certTitle": "Certifications",
+    "certifications": {
+      "rhcsa": "Red Hat Certified System Administrator (RHCSA)",
+      "ts": "TypeScript for Beginner to Advanced",
+      "python": "Python Course Certification: Mastering the Essentials"
+    }
+  },
+  "experience": {
+    "maticz": {
+      "Software_Developer": "Software Developer",
+      "description": "",
+      "end": "present",
+      "start": "sep-2023",
+      "points": [
+        "Architected and delivered scalable backend RESTful APIs using Node.js (Express) and Java (Spring Boot), applying microservices architecture, service-oriented design, and versioned API contracts.",
+        "Engineered asynchronous, event-driven pipelines using Apache Kafka and BullMQ, processing 100K+ messages per day and reducing peak CPU utilization by approximately 60%.",
+        "Implemented JWT-based authentication and role-based access control (RBAC) across 8+ microservices, securing access for over 1,000 active users.",
+        "Delivered real-time backend communication using Socket.IO, supporting 1,000+ concurrent connections with optimized WebSocket handling.",
+        "Designed and implemented NFC-based authentication APIs, enabling secure device-level access and seamless integration with React Native applications.",
+        "Optimized backend performance through debugging, root cause analysis, and system tuning, improving production stability and reliability.",
+        "Collaborated closely with UI/UX designers and clients to translate business requirements into scalable, high-quality, user-friendly solutions."
+      ]
     },
-    "nav": {
-      "home": "Home",
-      "certifications": "Certifications",
-      "skills": "Skills",
-      "about": "About",
-      "project" : "Projects"
-    } , 
-    "hero": {
-        "greeting": "Hi, Kamesh Here!",
-        "description": "24-year-old software developer from India, am a full-stack dev, drink instant coffee, and get coding advice from my dog, Zara.",
-        "resume": "Resume"
-      },
-    "about": {
-        "title": "About Me",
-        "description": "I've always had a deep fascination with technology. My journey began in childhood when I repaired my grandmother's phone and continued through my school years, fixing my own PC and helping friends with theirs for free. This early exposure to troubleshooting and repairing computers led me to start a small business, charging for my repair services, which further fueled my passion for systems and gaming. My interest in tech expanded when I began building gaming PCs for others, merging my love for gaming and hardware. This passion drove me to think bigger, focusing on scalable and high-availability systems and servers."
-      },
-      "education": {
-        "title": "Education",
-        "masters": "Master of Computer Science",
-        "mastersCollege": "Thiagarajar College",
-        "bachelors": "Bachelor of Computer Application",
-        "bachelorsCollege": "The American College",
-        "certTitle": "Certifications",
-        "certifications": {
-          "rhcsa": "Red Hat Certified System Administrator (RHCSA)",
-          "ts": "TypeScript for Beginner to Advanced",
-          "python": "Python Course Certification: Mastering the Essentials"
-        }
-      },
-      "experience": {
-        "maticz" : {
-            "Software_Developer": "Software Developer",
-            "description": "full-stack dev worked on mern stack and golang projects" ,
-            "end" :"present",
-            "start" : "sep-2023" ,
-            "points" :  [ "Built and maintained RESTful APIs using Node.js (Express) and Python (FastAPI), ensuring high performance and scalability" ,
-            " Designed and developed reusable, responsive UI components using ReactJS and Redux, improving code maintainability and reducing UI defects." ,
-          "Enhanced API response times by implementing a Redis-based caching mechanism, reducing average latency significantly." ,
-        "Integrated BullMQ and Kafka to enable asynchronous processing and distributed message handling, reducing CPU load by 60%." ,
-        "Implemented secure and scalable file storage using AWS S3, and optimized content delivery with CloudFront CDN to reduce file access latency globally.",
-        "Built and integrated NFC keycard support in a React Native application using native modules, enabling secure contactless authentication and improving user experience.",
-        "Collaborated closely with UI/UX designers and clients to translate business requirements into high-quality, user-friendly features."
-  ]
-        },
-        "railway" : {
-            "title": "Software intern",
-            "company": "indian Railways",
-        
-            "start" : "jan-2023" ,
-            "end" :"mar-2023",
-            "description": "worked on the websites for railway hospital",
-            "points": []
-        },
-        "freelance" : {
-            "title": "Computer Services and Video Editor",
-            "company": 
-            "freelancer",
-        "image" : "",
-    
-            "start" : "jan-2018" ,
-            "end" :"present",
-            "description": "deep passion for technology and creativity, I offer a unique blend of computer services and video editing expertise. I enjoy solving technical challenges, whether it's troubleshooting computer issues, optimizing systems, or providing digital solutions that streamline workflows"
-        ,
-        "points": []
-        }
+    "railway": {
+      "title": "Software intern",
+      "company": "indian Railways",
+
+      "start": "jan-2023",
+      "end": "mar-2023",
+      "description": "worked on the websites for railway hospital",
+      "points": []
     },
-    "footer": {
-        "privacy": "No copyright issues. | privacy?",
-        "copy": "Feel free to copy. If you need any help, ping me!",
-        "made_with": "Made with <0>♥</0> in India"
-      }
+    "freelance": {
+      "title": "Computer Services and Video Editor",
+      "company": "freelancer",
+      "image": "",
+
+      "start": "jan-2018",
+      "end": "present",
+      "description": "deep passion for technology and creativity, I offer a unique blend of computer services and video editing expertise. I enjoy solving technical challenges, whether it's troubleshooting computer issues, optimizing systems, or providing digital solutions that streamline workflows",
+      "points": []
+    }
+  },
+  "footer": {
+    "privacy": "No copyright issues. | privacy?",
+    "copy": "Feel free to copy. If you need any help, ping me!",
+    "made_with": "Made with <0>♥</0> in India"
   }
-  
+}
